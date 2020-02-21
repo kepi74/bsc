@@ -1,0 +1,12 @@
+type Note {
+  id: ID!
+  title: String!
+}
+
+type Query {
+  note(id: ID!): Note!
+}
+
+schema {
+  query: Query
+}
